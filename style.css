@@ -1,5 +1,5 @@
 div {
-    border : 2px solid red;
+    border : 0px solid red;
 }
 
 object {
@@ -7,25 +7,44 @@ object {
     height : 100%;
 }
 
-.item0 { grid-area: image; }
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    'image header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-
-}
-
-.grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+.centered {
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
 }
+
+html {
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    height: 100px;
+    background-color : rgb(200,200,200);
+    border-radius : 20px;
+}
+
+.liste {
+    --gap: 10px;
+    position: absolute;
+    top: calc(105px + var(--gap));
+    right: 5px;
+    width: calc(20% - calc(var(--gap)/2));
+    bottom: 5px;
+    background-color : rgb(200,200,200);
+    border-radius : 5px;
+}
+
+.main {
+    --gap: 10px;
+    position: absolute;
+    top: calc(105px + var(--gap));
+    left: 5px;
+    right: calc(calc(20% + 5px) + calc(var(--gap)/2)) ;
+    bottom: 5px;
+    background-color : rgb(200,200,200);
+    border-radius : 5px;
+    padding : 20px;
+}
+
