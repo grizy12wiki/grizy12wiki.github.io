@@ -34,6 +34,9 @@ html {
     bottom: 5px;
     background-color : rgb(200,200,200);
     border-radius : 5px;
+    padding: 5px;
+    overflow: hidden;
+    overflow-y:scroll;
 }
 
 .main {
@@ -41,7 +44,7 @@ html {
     position: absolute;
     top: calc(105px + var(--gap));
     left: 5px;
-    right: calc(calc(20% + 5px) + calc(var(--gap)/2)) ;
+    right: calc(calc(20% + 15px) + calc(var(--gap)/2)) ;
     bottom: 5px;
     background-color : rgb(200,200,200);
     border-radius : 5px;
