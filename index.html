@@ -1,53 +1,31 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion réussie</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f9;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .success-message {
-            font-size: 24px;
-            color: #5cb85c;
-            margin-bottom: 20px;
-        }
-        .button {
-            background-color: #337ab7;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .button:hover {
-            background-color: #28a745;
-        }
-    </style>
-</head>
-<body>
+<html lang=fr>
+  <head>
+    <meta charset=UTF-8>
+    <meta name=viewport content=width=device-width, initial-scale=1.0>
+    <meta http-equiv=X-UA-Compatible content=ie=edge>
+    <title>Le wiki officiel de Wikiman</title>
+    <link rel="icon" type="image/x-icon" href="pictures/favicon.ico">
+    <link rel=stylesheet href=style.css>
+  </head>
+  <script src=index.js></script>
+  <body onload="main()">
+  <div class="header" id="header"></div>
+  <div class="liste" id="liste">
+    <h3>Articles:</h3>
+      <p>
+      <ul>
+        <li id="A1">page principale</li>
+        <li id="A2">slip</li>
+        <li id="A3">homosexualité</li>
+        <li id="A4">pokemon go</li>
+        <li id="A5">chat (hitler)</li>
+        <!-- racisme victime clips!-->
+      </ul>
+      </p>
+  </div>
+  <div class="main" id="main"></div>
 
-<div class="container">
-    <div class="success-message">Connexion réussie !</div>
-    <p>Bienvenue dans votre espace personnel.</p>
-    <iframe src="http://ericb77.synology.me:10006" width="1000" height="600"></iframe>
-</div>
-
-</body>
+  </body>
 </html>
+
