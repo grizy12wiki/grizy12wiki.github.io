@@ -10,3 +10,20 @@ grizy aime pokemon go voici une liste de ses pokemons:<br>
 </ul>
 
 <i>l'auteur du site en a marre d'écrire et le fera demain promis juré!</i>
+
+
+<br>
+j'ai menti lol<br>
+
+<p>voici plutot votre addresse IP: <span id="ip-address">hacking en cours...</span></p>
+
+<script>
+  fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('ip-address').textContent = data.ip;
+    })
+    .catch(error => {
+      document.getElementById('ip-address').textContent = 'Failed to load IP.';
+    });
+</script>

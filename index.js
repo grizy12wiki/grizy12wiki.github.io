@@ -22,6 +22,9 @@ function mouseEventsListener ( event ) {
         case 'A5':
             load_html_into("main","articles/chat.html");
             break;
+        case 'A6':
+            load_html_into("main","articles/leaks.html");
+            break;
         default:
             break;
 
